@@ -818,7 +818,7 @@ local function webhook(raised, donor)
 				["Content-Type"] = "application/json"
 			},
 			Body = game:GetService "HttpService":JSONEncode({
-				content = "No Ping",
+				content = "",
 				embeds = {
 					a
 				}
@@ -1121,7 +1121,7 @@ webhookBox.Text = getgenv().settings.webhookBox
 webhookTab:AddLabel('Press Enter to Save')
 webhookTab:AddButton("Test", function()
 	if getgenv().settings.webhookBox then
-		oldWebhook("webhook works | dotgg")
+		oldWebhook("DUKES WEBHOOK WORKS!")
 	end
 end)
 
